@@ -1,4 +1,4 @@
-import React, { useContext, useState } from 'react'
+import { useContext, useState } from 'react'
 import { assets } from '../../assets/assets'
 import { toast } from 'react-toastify'
 import axios from 'axios'
@@ -133,12 +133,12 @@ const AddDoctor = () => {
                         <div className='flex-1 flex flex-col gap-1'>
                             <p>Speciality</p>
                             <select onChange={e => setSpeciality(e.target.value)} value={speciality} className='border rounded px-2 py-2'>
-                                <option value="General physician">General physician</option>
-                                <option value="Gynecologist">Gynecologist</option>
-                                <option value="Dermatologist">Dermatologist</option>
-                                <option value="Pediatricians">Pediatricians</option>
-                                <option value="Neurologist">Neurologist</option>
-                                <option value="Gastroenterologist">Gastroenterologist</option>
+                                <option value="Endodontics">Endodontics</option>
+                                <option value="Orthodontics">Orthodontics</option>
+                                <option value="Periodontics">Periodontics</option>
+                                <option value="Prosthodontics">Prosthodontics</option>
+                                <option value="Maxillofacial">Maxillofacial</option>
+                                <option value="Pedodontics">Pedodontics</option>
                             </select>
                         </div>
 
